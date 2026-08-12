@@ -33,9 +33,9 @@ body {
 main{
     display: grid;
     grid-template-columns: 3fr 8fr 1fr 8fr 1fr 8fr 1fr 8fr 3fr;
-    grid-template-rows: 30px 400px 160px 100px 20px 350px 70px 320px 55px;
-}
-
+    grid-template-rows: 50px 400px 50px 80px 50px 350px 70px 40px 80px 50px 350px 60px 50px 50px 450px 60px          /* rodape */  320px 55px;
+                    /*   1     2    3    4     5    6     7     8    9    10   11   12   13   14    15    16                          17   18  */
+}                      
 
 
 
@@ -65,17 +65,18 @@ main{
 }
 .imgcadeado{
     grid-column: 6;
-    grid-row: 3;
-    width: 90px;
-    margin-top: 70px;
+    grid-row: 4;
+    width: 80px;
+
     position: relative;
-    right: 120px;
+    right: 110px;
 }
 .seguro{
     grid-column: 6;
-    grid-row: 3;
-    width: 100px;
-    margin-top: 70px;
+    grid-row: 4;
+    width: 70px;
+    font-size: 21px;
+    
 }
 
 .bannerPrincipal h2 {
@@ -101,7 +102,7 @@ main{
 .btnBanner {
     width: 80%;
     display: inline-block;
-    margin-top: 80px;
+   
     padding-top: 15px;
     padding-left: 20%;
     font-size: 20px;
@@ -119,7 +120,7 @@ main{
     letter-spacing: 1.2px;
 
     grid-column: 2/5;
-    grid-row: 3;
+    grid-row: 4;
 }
 
 
@@ -244,13 +245,7 @@ main{
     transition: 0.2s;
     border-radius: 10px;
 }
-.informacaoDestaques{
-    grid-row: 4;
-    grid-column: 2/5;
-    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.527);
-    margin-top: 50px;
 
-}
 .blocoProduto1 {
     grid-column: 2;
     grid-row: 6;
@@ -277,9 +272,45 @@ main{
     grid-column: 8;
     grid-row: 6;
 }
+
+.aPartirDe{
+    grid-column: 2/4;
+    grid-row: 8;
+    display: flex;
+    margin-right: 10px;
+}
+.aPartirDe p{
+    margin-left: 10px;
+    color: #65ff13;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* -------------------------------------------------------------------------- */
 .rodape{
     grid-column: 1/10;
-    grid-row: 8;
+    grid-row: 17;
     display: flex;
     font-size: 12px;
     background-color: #3d3d3d;
@@ -325,7 +356,7 @@ main{
 }
 .rodapeEmBaixo{
     grid-column: 1/10;
-    grid-row: 9;
+    grid-row: 18;
     background-image: url(Imagens/rodapeembaixo.png);
     background-size: 5%;
     align-items: center;
@@ -338,4 +369,4 @@ main{
     font-size: 10px;
     
 }
-
+/* -------------------------------------------------------------------------- */
